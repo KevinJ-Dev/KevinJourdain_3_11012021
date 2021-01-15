@@ -1,0 +1,19 @@
+{
+  "name": "kevinjourdain_3_11012021",
+  "version": "1.0.0",
+  "description": "Dynamisez une page web avec des animations CSS",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss css/style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevinJ-Dev/KevinJourdain_3_11012021.git"
+  },
+  "author": "Kevin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KevinJ-Dev/KevinJourdain_3_11012021/issues"
+  },
+  "homepage": "https://github.com/KevinJ-Dev/KevinJourdain_3_11012021#readme"
+}
