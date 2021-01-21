@@ -1,0 +1,34 @@
+footer {
+  background-color: rgb(66 66 66);
+  height: 190px;
+  color: $liens;
+  padding-left: 6%;
+  padding-top: 2px;
+
+  & > .logo_footer {
+    font-family: $Shrikhand;
+    font-size: 1.1em;
+    font-weight: inherit;
+  }
+
+  & > .list_bloc_footer {
+    font-family: $Roboto;
+    padding: 0;
+
+    & > .list_footer {
+      list-style: none;
+      margin-bottom: 7px;
+
+      & > .link_footer {
+        text-decoration: none;
+        font-size: 0.9rem;
+        color: $liens;
+
+        & > .icon_footer {
+          margin-right: 10px;
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+}
