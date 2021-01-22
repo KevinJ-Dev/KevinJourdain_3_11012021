@@ -2,7 +2,7 @@ body {
   margin: 0px;
 }
 
-body > section:nth-of-type(1) {
+body > .reserve:nth-of-type(1) {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -12,7 +12,7 @@ body > section:nth-of-type(1) {
   text-align: center;
   font-family: $Roboto;
 
-  & > p {
+  & > .text_align {
     font-size: 1em;
     color: #424242;
     font-weight: bold;
@@ -30,7 +30,7 @@ body > section:nth-of-type(1) {
     }
   }
 
-  & > h1 {
+  & > .title {
     font-family: $Roboto;
     font-weight: bold;
     width: 240px;
@@ -38,7 +38,7 @@ body > section:nth-of-type(1) {
     margin-top: -20px;
   }
 
-  & > h3 {
+  & > .subtitle {
     font-family: $Roboto;
     font-weight: 400;
     width: 370px;
@@ -47,21 +47,21 @@ body > section:nth-of-type(1) {
     font-size: 1.1em;
   }
 
-  & > button {
+  & > .btn_unique {
     width: 226px;
     margin-top: -45px;
     @include button;
   }
 }
 
-body > section:nth-of-type(2) {
+body > .demo:nth-of-type(2) {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   height: 430px;
   padding-bottom: 37px;
 
-  & > h2 {
+  & > .title_demo {
     flex: auto;
     font-family: $Roboto;
     margin-left: 20px;
@@ -70,7 +70,7 @@ body > section:nth-of-type(2) {
     font-weight: bold;
   }
 
-  & > article {
+  & > .step_demo {
     display: flex;
     align-items: center;
     width: 87%;
@@ -87,7 +87,7 @@ body > section:nth-of-type(2) {
       background: #ece1fa;
     }
 
-    & > p {
+    & > .step_demo_num {
       color: white;
       border: 1px solid $primary;
       border-radius: 50px;
@@ -138,7 +138,7 @@ body > section:nth-of-type(2) {
       }
     }
 
-    & > h3 {
+    & > .subtitle_demo {
       margin-left: 9%;
       font-size: 17px;
     }
@@ -150,14 +150,14 @@ body > section:nth-of-type(2) {
   }
 }
 
-body > section:nth-of-type(3) {
+body > .menu:nth-of-type(3) {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   background: $background;
   padding-bottom: 13%;
 
-  & > h2 {
+  & > .title_menu {
     flex: auto;
     font-family: $Roboto;
     margin-left: 20px;
@@ -165,7 +165,7 @@ body > section:nth-of-type(3) {
     font-weight: bold;
   }
 
-  & > article > a {
+  & > .article > a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -173,7 +173,7 @@ body > section:nth-of-type(3) {
     text-decoration: none;
   }
 
-  & > article > a > figure {
+  & > .article > a > figure {
     display: flex;
     flex-wrap: wrap;
     width: 90%;
@@ -181,7 +181,7 @@ body > section:nth-of-type(3) {
     margin-right: 0px;
     margin-top: 2px;
 
-    & > span {
+    & > .new {
       position: absolute;
       margin-top: 14px;
       right: 8%;
@@ -197,7 +197,7 @@ body > section:nth-of-type(3) {
       font-weight: bold;
     }
 
-    & > img {
+    & > .card {
       width: 100%;
       height: auto;
       border-top-left-radius: 15px;
@@ -205,7 +205,7 @@ body > section:nth-of-type(3) {
       box-shadow: 0px 3px 8px #a5a5a573;
     }
 
-    & > figcaption {
+    & > .bloc_menu {
       width: 100%;
       height: 76px;
       border-bottom-left-radius: 15px;
@@ -216,11 +216,11 @@ body > section:nth-of-type(3) {
       padding-left: 15px;
       font-family: $Roboto;
 
-      & > h3 {
+      & > .title_menu {
         margin-top: 15px;
       }
 
-      & > p {
+      & > .text_menu {
         font-size: 1.1em;
         margin-top: -17px;
       }
@@ -232,525 +232,6 @@ body > section:nth-of-type(3) {
         font-size: 1.4em;
         @include like_btn;
       }
-    }
-  }
-}
-
-@media screen and (min-width: 530px) and (max-width: 768px) {
-  body > section:nth-of-type(1) {
-    & > h1 {
-      width: auto;
-    }
-
-    & > h3 {
-      padding-left: 17%;
-      padding-right: 17%;
-    }
-  }
-
-  body > section:nth-of-type(2) {
-    & > h2 {
-      width: 100%;
-      margin-left: 22px;
-    }
-
-    & > article {
-      width: 397px;
-    }
-  }
-
-  body > section:nth-of-type(3) {
-    padding-bottom: 7%;
-
-    & > h2 {
-      margin-left: 3%;
-      margin-bottom: 25px;
-      width: 100%;
-    }
-
-    & > article {
-      display: contents;
-    }
-
-    & > article > a {
-      display: contents;
-      & > figure {
-        width: 46%;
-        margin-left: 1.5%;
-        margin-right: 1.5%;
-        margin-top: 15px;
-
-        & > img {
-          height: auto;
-        }
-
-        & > figcaption {
-          margin-top: -3px;
-
-          & > i {
-            right: inherit;
-            margin-left: 36.2%;
-          }
-        }
-      }
-    }
-
-    & > article:nth-of-type(1) > a > figure > span {
-      right: 54%;
-    }
-
-    & > article:nth-of-type(2) > a > figure > span {
-      right: 5%;
-    }
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  body > section:nth-of-type(1) {
-    & > h1 {
-      width: auto;
-      font-size: 1.5em;
-    }
-
-    & > h3 {
-      padding-left: 22%;
-      padding-right: 22%;
-      font-size: 1.2em;
-    }
-  }
-
-  body > section:nth-of-type(2) {
-    & > h2 {
-      width: 100%;
-      margin-left: 6%;
-    }
-
-    & > article {
-      width: 410px;
-      margin-left: 10%;
-      margin-right: 10%;
-    }
-  }
-
-  body > section:nth-of-type(3) {
-    padding-bottom: 7%;
-
-    & > h2 {
-      margin-left: 6%;
-      margin-bottom: 25px;
-      width: 100%;
-    }
-
-    & > article {
-      display: contents;
-    }
-
-    & > article > a {
-      display: contents;
-      & > figure {
-        width: 40%;
-        margin-left: 4%;
-        margin-right: 4%;
-        margin-top: 15px;
-
-        & > img {
-          height: auto;
-        }
-
-        & > figcaption {
-          margin-top: -3px;
-
-          & > i {
-            right: inherit;
-            margin-left: 33%;
-          }
-        }
-      }
-    }
-
-    & > article:nth-of-type(1) > a > figure > span {
-      right: 55.5%;
-    }
-
-    & > article:nth-of-type(2) > a > figure > span {
-      right: 7.5%;
-    }
-  }
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1440px) {
-  body > section:nth-of-type(1) {
-    & > p {
-      font-size: 1.05em;
-    }
-
-    & > h1 {
-      width: auto;
-      font-size: 1.65em;
-    }
-
-    & > h3 {
-      padding-left: 30%;
-      padding-right: 30%;
-      font-size: 1.35em;
-      width: 377px;
-    }
-  }
-
-  body > section:nth-of-type(2) {
-    justify-content: space-evenly;
-    height: 275px;
-    padding-bottom: 20px;
-
-    & > h2 {
-      width: 100%;
-      margin-left: 4%;
-    }
-
-    & > article {
-      width: 27%;
-      margin-left: 0%;
-      margin-right: 0%;
-
-      &:nth-of-type(2) {
-        margin-bottom: 0px;
-        margin-top: 0px;
-      }
-    }
-  }
-
-  body > section:nth-of-type(3) {
-    padding-bottom: 7%;
-
-    & > h2 {
-      margin-left: 4%;
-      margin-bottom: 25px;
-      width: 100%;
-    }
-
-    & > article {
-      display: contents;
-    }
-
-    & > article > a {
-      display: contents;
-      & > figure {
-        width: 40%;
-        margin-left: 4%;
-        margin-right: 4%;
-        margin-top: 15px;
-
-        & > img {
-          height: auto;
-        }
-
-        & > figcaption {
-          margin-top: -5px;
-
-          & > i {
-            right: inherit;
-            margin-left: 34%;
-          }
-        }
-      }
-    }
-
-    & > article:nth-of-type(1) > a > figure > span {
-      right: 55.5%;
-      margin-left: 0%;
-    }
-
-    & > article:nth-of-type(2) > a > figure > span {
-      right: 7.5%;
-      margin-left: 0%;
-    }
-  }
-}
-
-@media screen and (min-width: 1441px) and (max-width: 1940px) {
-  body > section:nth-of-type(1) {
-    height: 345px;
-
-    & > p {
-      font-size: 1.1em;
-      margin-bottom: 15px;
-    }
-
-    & > h1 {
-      width: auto;
-      font-size: 1.65em;
-    }
-
-    & > h3 {
-      padding-left: 36%;
-      padding-right: 36%;
-      font-size: 1.4em;
-      width: auto;
-    }
-
-    & > button {
-      width: 268px;
-      height: 58px;
-      font-size: 1.11em;
-    }
-  }
-
-  body > section:nth-of-type(2) {
-    justify-content: space-evenly;
-    height: 250px;
-    padding-bottom: 20px;
-
-    & > h2 {
-      width: 100%;
-      margin-left: 4%;
-      font-size: 1.6em;
-    }
-
-    & > article {
-      width: 380px;
-      margin-left: 0%;
-      margin-right: 0%;
-
-      & > p {
-        padding: 7px;
-        padding-top: 3px;
-        width: 11.5px;
-        font-size: 16.5px;
-        height: 15px;
-      }
-
-      &:nth-of-type(1) > i {
-        font-size: 1.4em;
-      }
-
-      &:nth-of-type(2) {
-        margin-bottom: 0px;
-        margin-top: 0px;
-
-        & > i {
-          font-size: 1.3em;
-        }
-      }
-
-      &:nth-of-type(3) > i {
-        font-size: 1.15em;
-      }
-
-      & > h3 {
-        font-size: 1.21em;
-      }
-    }
-  }
-
-  body > section:nth-of-type(3) {
-    padding-bottom: 5%;
-
-    & > h2 {
-      margin-left: 4%;
-      margin-bottom: 39px;
-      width: 100%;
-      font-size: 1.6em;
-    }
-
-    & > article {
-      display: contents;
-    }
-
-    & > article > a {
-      display: contents;
-      & > figure {
-        width: 34%;
-        margin-left: 6%;
-        margin-right: 6%;
-        margin-top: 15px;
-        margin-bottom: 35px;
-
-        & > img {
-          height: auto;
-        }
-
-        & > figcaption {
-          margin-top: -10px;
-          height: 80px;
-
-          & > h3 {
-            font-size: 1.3em;
-          }
-
-          & > p {
-            font-size: 1.15em;
-          }
-
-          & > i {
-            right: inherit;
-            margin-left: 30%;
-            font-size: 1.6em;
-            margin-top: -58px;
-          }
-        }
-      }
-    }
-
-    & > article:nth-of-type(1) > a > figure > span {
-      right: 57.5%;
-      margin-left: 0%;
-      font-size: 1em;
-    }
-
-    & > article:nth-of-type(2) > a > figure > span {
-      right: 11.5%;
-      margin-left: 0%;
-      font-size: 1em;
-    }
-  }
-}
-
-@media screen and (min-width: 1941px) {
-  body > section:nth-of-type(1) {
-    height: 355px;
-
-    & > p {
-      font-size: 1.3em;
-      margin-bottom: 15px;
-    }
-
-    & > h1 {
-      width: auto;
-      font-size: 1.8em;
-    }
-
-    & > h3 {
-      padding-left: 39%;
-      padding-right: 39%;
-      font-size: 1.5em;
-      width: auto;
-    }
-
-    & > button {
-      width: 283px;
-      height: 58px;
-      font-size: 1.2em;
-    }
-  }
-
-  body > section:nth-of-type(2) {
-    justify-content: space-around;
-    height: 250px;
-    padding-bottom: 20px;
-
-    & > h2 {
-      width: 100%;
-      margin-left: 1%;
-      font-size: 1.7em;
-    }
-
-    & > article {
-      width: 459px;
-      margin-left: 0%;
-      margin-right: 0%;
-
-      & > p {
-        padding: 8px;
-        padding-top: 3px;
-        width: 11px;
-        font-size: 18px;
-        height: 15px;
-      }
-
-      &:nth-of-type(1) > i {
-        font-size: 1.4em;
-      }
-
-      &:nth-of-type(2) {
-        margin-bottom: 0px;
-        margin-top: 0px;
-
-        & > i {
-          font-size: 1.3em;
-        }
-      }
-
-      &:nth-of-type(3) > i {
-        font-size: 1.15em;
-      }
-
-      & > h3 {
-        font-size: 1.21em;
-      }
-    }
-  }
-
-  body > section:nth-of-type(3) {
-    padding-bottom: 3%;
-
-    & > h2 {
-      margin-left: 1%;
-      margin-bottom: 39px;
-      width: 100%;
-      font-size: 1.7em;
-    }
-
-    & > article {
-      display: contents;
-    }
-
-    & > article > a {
-      display: contents;
-      & > figure {
-        width: 23%;
-        margin-left: 1%;
-        margin-right: 1%;
-        margin-top: 15px;
-        margin-bottom: 35px;
-
-        & > img {
-          height: auto;
-        }
-
-        & > figcaption {
-          margin-top: -12px;
-          height: 90px;
-
-          & > h3 {
-            font-size: 1.45em;
-          }
-
-          & > p {
-            font-size: 1.3em;
-          }
-
-          & > i {
-            right: inherit;
-            margin-left: 19.5%;
-            font-size: 1.86em;
-            margin-top: -63px;
-          }
-        }
-      }
-    }
-
-    & > article:nth-of-type(1) > a > figure > span {
-      right: 77%;
-      margin-left: 0%;
-      font-size: 1.2em;
-    }
-
-    & > article:nth-of-type(2) > a > figure > span {
-      right: 52%;
-      margin-left: 0%;
-      font-size: 1.2em;
-    }
-  }
-
-  footer {
-    padding-left: 0%;
-    text-align: center;
-    height: 131px;
-
-    & > h2 {
-      font-size: 1.35em;
-      margin-bottom: 0%;
-      padding-top: 0.2%;
     }
   }
 }
