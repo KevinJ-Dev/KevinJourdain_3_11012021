@@ -8,89 +8,93 @@
     <title>Ohmyfood</title>
 </head>
 <body>
-    <header>
-        <img src="img/ohmyfood-logo.png" alt="ohmyfood" />
+    <header class="header">
+        <img class="logo" src="img/ohmyfood-logo.png" alt="ohmyfood" />
     </header>
 
-    <section>
-        <p><i class="fas fa-map-marker-alt"></i>Paris, Belleville</p>
-        <h1>Réservez le menu qui vous convient</h1>
-        <h3>Découvrez des restaurants d'exception,<br />séléctionnés par nos soins.</h3>
-        <button>Explorer nos restaurants</button>
+    <!-- Section reserve -->
+    <section class="reserve">
+        <p class="text_align"><i class="fas fa-map-marker-alt"></i>Paris, Belleville</p>
+        <h1 class="title">Réservez le menu qui vous convient</h1>
+        <h3 class="subtitle">Découvrez des restaurants d'exception,<br />séléctionnés par nos soins.</h3>
+        <button class="btn_unique">Explorer nos restaurants</button>
     </section>
 
-    <section>
-        <h2>Fonctionnement</h2>
-        <article>
-            <p>1</p>
+    <!-- Section demo -->
+    <section class="demo">
+        <h2 class="title_demo">Fonctionnement</h2>
+        <article class="step_demo">
+            <p class="step_demo_num">1</p>
             <i class="fas fa-mobile-alt"></i>
-            <h3>Chosissez un restaurant</h3>
+            <h3 class="subtitle_demo">Chosissez un restaurant</h3>
         </article>
 
-        <article>
-            <p>2</p>
+        <article class="step_demo">
+            <p class="step_demo_num">2</p>
             <i class="fas fa-list-ul"></i>
-            <h3>Composez votre menu</h3>
+            <h3 class="subtitle_demo">Composez votre menu</h3>
         </article>
 
-        <article>
-            <p>3</p>
+        <article class="step_demo">
+            <p class="step_demo_num">3</p>
             <i class="fas fa-store"></i>
-            <h3>Dégustez au restaurant</h3>
+            <h3 class="subtitle_demo">Dégustez au restaurant</h3>
         </article>
     </section>
-
-    <section>
-        <h2>Restaurants</h2>
-        <article>
-            <a href="#">
+    
+    <!-- Section menu -->
+    <!-- replace section to main -->
+    <section class="menu">
+        <h2 class="title_menu">Restaurants</h2>
+        <article class="article">
+            <a href="/menu/la-palette-du-gout.html">
                 <figure>
-                    <span>Nouveau</span>
-                    <img src="img/restaurant-1.jpg" alt="La palette du goût" />
-                    <figcaption>
-                        <h3>La palette du goût</h3>
-                        <p>Ménilmontant</p>
+                    <span class="new">Nouveau</span>
+                    <img class="card" src="img/restaurant-1.jpg" alt="La palette du goût" />
+                    <figcaption class="bloc_menu">
+                        <h3 class="title_menu">La palette du goût</h3>
+                        <p class="text_menu">Ménilmontant</p>
                         <i class="far fa-heart"></i>
                     </figcaption>
                 </figure>
                 </a>
             </article>
 
-        <article>
-            <a href="la_note_enchantee.html">
+            <article class="article">
+            <a href="menu/la-note-enchantee.html">
                 <figure>
-                    <span>Nouveau</span>
-                    <img src="img/restaurant-2.jpg" alt="La note enchantée" />
-                    <figcaption>
-                        <h3>La note enchantée</h3>
-                        <p>Charonne</p>
+                    <span class="new">Nouveau</span>
+                    <img class="card" src="img/restaurant-2.jpg" alt="La note enchantée" />
+                    <figcaption class="bloc_menu">
+                        <h3 class="title_menu">La note enchantée</h3>
+                        <p class="text_menu">Charonne</p>
                         <i class="far fa-heart"></i>
                     </figcaption>
                 </figure>
             </a>
         </article>
 
-        <article>
+        <article class="article">
             <a href="a_la_française.html">
                 <figure>
-                    <img src="img/restaurant-3.jpg" alt="À la française" />
-                    <figcaption>
-                        <h3>À la française</h3>
-                        <p>Cité Rouge</p>
+                    <img class="card" src="img/restaurant-3.jpg" alt="À la française" />
+                    <figcaption class="bloc_menu">
+                        <h3 class="title_menu">À la française</h3>
+                        <p class="text_menu">Cité Rouge</p>
                         <i class="far fa-heart"></i>
                     </figcaption>
                 </figure>
             </a>
         </article>
 
-        <article>
+        <article class="article">
             <a href="le_delice_des_sens.html">
                 <figure>
-                    <img src="img/restaurant-4.jpg"
+                    <img class="card" src="img/restaurant-4.jpg"
                         alt="Le délice des sens" />
-                    <figcaption>
-                        <h3>Le délice des sens</h3>
-                        <p>Folie-Méricourt</p>
+                    <figcaption class="bloc_menu">
+                        <h3 class="title_menu">Le délice des sens</h3>
+                        <p class="text_menu">Folie-Méricourt</p>
                         <i class="far fa-heart"></i>
                     </figcaption>
                 </figure>
@@ -104,7 +108,7 @@
                 <!-- <img class="logo_footer" src="img/ohmyfood-logo.png" alt="logo_ohmyfood"> -->
             <ul class="list_bloc_footer">
                 <li class="list_footer">
-                    <a class="link_footer" href="#"><i class="icon_footer fas fa-utensils"></i>Proposer un restaurant</a>
+                    <a class="link_footer" href="#"><i class="icon_footer fas fa-utensils"></i> Proposer un restaurant</a>
                 </li>
                 <li class="list_footer">
                     <a class="link_footer" href="#"><i class="icon_footer fas fa-hands-helping"></i>Devenir partenaire</a>
