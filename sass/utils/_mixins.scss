@@ -1,1 +1,45 @@
+@mixin button {
+  height: 50px;
+  border: 0px solid black;
+  border-radius: 50px;
+  color: white;
+  font-family: $Roboto;
+  font-size: 1em;
+  background: linear-gradient(174deg, $secondary, $primary);
+  box-shadow: 0px 3px 9px #afafaf;
+  cursor: pointer;
+  outline: none;
+  transition: all 500ms;
 
+  &:hover {
+    background: linear-gradient(
+      174deg,
+      lighten($secondary, 1.5%),
+      lighten($primary, 1.5%)
+    );
+    box-shadow: 0px 3px 9px darken(#969696, 10%);
+  }
+}
+
+@mixin like_btn {
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+  background-size: auto 0%;
+  background-repeat: no-repeat;
+  -webkit-text-stroke-width: 1px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 600ms;
+
+  &:hover {
+    color: -webkit-linear-gradient(235deg, $primary, $secondary);
+    background: -webkit-linear-gradient(235deg, $primary, $secondary);
+    color: #5f5f5f;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    -webkit-text-stroke-width: thin;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
