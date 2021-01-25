@@ -1,4 +1,5 @@
 # KevinJourdain_3_11012021
+
 Dynamisez une page web avec des animations CSS
 
 Bonjour ! 😀
@@ -19,7 +20,6 @@ Sur tablette et desktop, le site devra s’adapter, mais ces supports n’étant
 L’ensemble du site devra être responsive sur mobile, tablette et desktop.
 Les pages devront passer la validation W3C en HTML et CSS sans erreur.
 Le site doit être parfaitement compatible avec les dernières versions desktop de Chrome et Firefox.
-
 
     Page d’accueil (x1)
 
@@ -79,6 +79,3 @@ sur desktop au lieu du clic. Si l’intitulé du plat est trop long, il devra ê
 des points de suspension. Un exemple de l’effet attendu est fourni.
 
 ![Group](https://user-images.githubusercontent.com/32522780/104314127-43610400-54d9-11eb-90de-b573f372f7b4.png)
-
-
-
