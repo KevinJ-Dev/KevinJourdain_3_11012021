@@ -14,7 +14,7 @@ body > .reserve:nth-of-type(1) {
 
   & > .text_align {
     font-size: 1em;
-    color: #424242;
+    color: $text;
     font-weight: bold;
     padding-top: 15px;
     padding-right: 24px;
@@ -22,7 +22,7 @@ body > .reserve:nth-of-type(1) {
     margin-bottom: 0px;
     height: 35px;
     width: 100%;
-    background-color: #dedede;
+    background-color: $background-2;
     box-shadow: inset 0px 2px 5px rgb(177, 177, 177, 0.8);
 
     & > i {
@@ -42,7 +42,7 @@ body > .reserve:nth-of-type(1) {
     font-family: $Roboto;
     font-weight: 400;
     width: 370px;
-    color: #636363;
+    color: $subtitle;
     margin-top: -63px;
     font-size: 1.1em;
   }
@@ -77,18 +77,18 @@ body > .demo:nth-of-type(2) {
     height: 75px;
     border-radius: 20px;
     margin-left: 10px;
-    background: #f2f2f2;
-    box-shadow: 0px 3.5px 12px #c5c5c5;
+    background: $background;
+    box-shadow: 0px 3.5px 12px $shadow;
     font-family: $Roboto;
     transition: all 250ms;
     cursor: pointer;
 
     &:hover {
-      background: #ece1fa;
+      background: $background-hover;
     }
 
     & > .step_demo_num {
-      color: white;
+      color: $white;
       border: 1px solid $primary;
       border-radius: 50px;
       background-color: $primary;
@@ -105,7 +105,7 @@ body > .demo:nth-of-type(2) {
 
     &:nth-of-type(1) {
       & > i {
-        color: gray;
+        color: $icon;
         font-size: 1.3em;
       }
 
@@ -116,7 +116,7 @@ body > .demo:nth-of-type(2) {
 
     &:nth-of-type(2) {
       & > i {
-        color: gray;
+        color: $icon;
         font-size: 1.2em;
         margin-right: -6.5px;
       }
@@ -128,7 +128,7 @@ body > .demo:nth-of-type(2) {
 
     &:nth-of-type(3) {
       & > i {
-        color: gray;
+        color: $icon;
         font-size: 1.05em;
         margin-right: -8px;
       }
@@ -169,7 +169,7 @@ body > .menu:nth-of-type(3) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    color: black;
+    color: $title_menu;
     text-decoration: none;
   }
 
@@ -185,14 +185,14 @@ body > .menu:nth-of-type(3) {
       position: absolute;
       margin-top: 14px;
       right: 8%;
-      color: darken(#00a583, 5%);
-      border: 0px solid black;
+      color: darken($darken_new, 5%);
+      border: 0px solid $title_menu;
       border-radius: 2.5px;
       padding: 7px;
       padding-right: 11px;
       padding-left: 11px;
       background: $tertiary;
-      font-family: "Roboto";
+      font-family: $Roboto;
       font-size: 0.86em;
       font-weight: bold;
     }
@@ -202,7 +202,7 @@ body > .menu:nth-of-type(3) {
       height: auto;
       border-top-left-radius: 15px;
       border-top-right-radius: 15px;
-      box-shadow: 0px 3px 8px #a5a5a573;
+      box-shadow: 0px 3px 8px $shadow_card;
     }
 
     & > .bloc_menu {
@@ -211,8 +211,8 @@ body > .menu:nth-of-type(3) {
       border-bottom-left-radius: 15px;
       border-bottom-right-radius: 15px;
       align-self: flex-end;
-      background: white;
-      box-shadow: 0px 0px 11px #a5a5a573;
+      background: $white;
+      box-shadow: 0px 0px 11px $shadow_card;
       padding-left: 15px;
       font-family: $Roboto;
 
