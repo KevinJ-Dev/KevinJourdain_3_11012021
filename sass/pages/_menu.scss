@@ -47,11 +47,6 @@ body > .card_menu > .card {
     @include like_btn;
   }
 
-  .fab,
-  .far {
-    font-weight: bold;
-  }
-
   & > button {
     width: 194px;
     margin-top: 6%;
@@ -153,11 +148,6 @@ body > .card_menu > .card {
       position: inherit;
       transition: 450ms;
     }
-  }
-
-  & > #carte-div {
-    height: 54px;
-    padding-top: 32px;
   }
 
   /* Check */
