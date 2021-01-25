@@ -1,0 +1,9 @@
+.header {
+  text-align: center;
+  height: 66px;
+
+  & > .logo {
+    margin-top: 24px;
+    width: 165px;
+  }
+}
