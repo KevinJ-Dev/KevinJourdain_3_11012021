@@ -5,3 +5,11 @@
 @import "layouts/footer";
 @import "pages/acceuil";
 @import "pages/menu";
+@import "animations/loader";
+@import "animations/animation_menu";
+
+/* Media query*/
+@import "media/tablet";
+@import "media/laptop";
+@import "media/laptop_l";
+@import "media/4k";
