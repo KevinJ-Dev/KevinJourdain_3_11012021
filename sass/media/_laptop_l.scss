@@ -1,0 +1,99 @@
+/* Acceuil */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  body > .reserve:nth-of-type(1) {
+    & > .title {
+      width: auto;
+      font-size: 1.65em;
+    }
+
+    & > .subtitle {
+      padding-left: 30%;
+      padding-right: 30%;
+      font-size: 1.35em;
+      width: 377px;
+    }
+  }
+
+  body > .demo:nth-of-type(2) {
+    justify-content: space-evenly;
+    height: 275px;
+    padding-bottom: 20px;
+
+    & > .title_demo {
+      width: 100%;
+      margin-left: 4%;
+    }
+
+    & > .step_demo {
+      width: 27%;
+      margin-left: 0%;
+      margin-right: 0%;
+
+      &:nth-of-type(2) {
+        margin-bottom: 0px;
+        margin-top: 0px;
+      }
+    }
+  }
+
+  body > .menu:nth-of-type(3) {
+    padding-bottom: 7%;
+
+    & > .title_menu {
+      margin-left: 4%;
+      margin-bottom: 25px;
+      width: 100%;
+    }
+
+    & > .article {
+      display: contents;
+    }
+
+    & > .article > a {
+      display: contents;
+      & > .bloc_componant {
+        width: 40%;
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-top: 15px;
+
+        & > .card {
+          height: auto;
+        }
+
+        & > .bloc_menu {
+          margin-top: -28px;
+
+          & > i {
+            right: inherit;
+            margin-left: 34%;
+          }
+        }
+      }
+    }
+
+    & > .article:nth-of-type(1) > a > figure > span {
+      right: 55.5%;
+      margin-left: 0%;
+    }
+
+    & > .article:nth-of-type(2) > a > figure > span {
+      right: 7.5%;
+      margin-left: 0%;
+    }
+  }
+}
+
+/* Menu */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  body > .card_menu > .card {
+    width: 100%;
+    height: auto;
+    margin-bottom: -10%;
+  }
+
+  .card_plat > .article > span {
+    margin-top: 51px;
+    margin-bottom: -36px;
+  }
+}

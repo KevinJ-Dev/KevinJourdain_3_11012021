@@ -1,0 +1,86 @@
+/* Accueil */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  body > .reserve:nth-of-type(1) {
+    & > .title {
+      width: auto;
+    }
+
+    & > .subtitle {
+      padding-left: 22%;
+      padding-right: 22%;
+      font-size: 1.2em;
+    }
+  }
+
+  body > .demo:nth-of-type(2) {
+    & > .title_demo {
+      width: 100%;
+      margin-left: 6%;
+    }
+
+    & > .step_demo {
+      width: 410px;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+  }
+
+  body > .menu:nth-of-type(3) {
+    padding-bottom: 7%;
+
+    & > .title_menu {
+      margin-left: 6%;
+      margin-bottom: 25px;
+      width: 100%;
+    }
+
+    & > .article {
+      display: contents;
+    }
+
+    & > .article > a {
+      display: contents;
+      & > .bloc_componant {
+        width: 40%;
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-top: 15px;
+
+        & > .card {
+          height: auto;
+        }
+
+        & > .bloc_menu {
+          margin-top: -18px;
+
+          & > i {
+            right: inherit;
+            margin-left: 33%;
+          }
+        }
+      }
+    }
+
+    & > .article:nth-of-type(1) > a > figure > span {
+      right: 55.5%;
+    }
+
+    & > .article:nth-of-type(2) > a > figure > span {
+      right: 7.5%;
+    }
+  }
+}
+
+/* Menu */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  body > .card_menu > .card {
+    width: 100%;
+    height: auto;
+    margin-bottom: -10%;
+  }
+
+  .card_plat > .article > span {
+    margin-top: 51px;
+    margin-bottom: -36px;
+  }
+}
