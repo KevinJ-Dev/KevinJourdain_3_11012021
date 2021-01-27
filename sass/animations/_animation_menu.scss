@@ -1,0 +1,22 @@
+/*boucle des id de slide 1 à 10 effectuer par la variable {$i}*/
+
+#slide_menu {
+  opacity: 0;
+  animation-name: slide;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0%;
+    transform: translateY(100%);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
