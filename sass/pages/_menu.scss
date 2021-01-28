@@ -172,6 +172,9 @@ body > .card_menu > .card {
       transition: 580ms;
 
       & > i {
+        transform: rotate(360deg);
+        transition: 0.5s;
+        transition-delay: 0.2s;
         animation: select 580ms backwards;
       }
     }
