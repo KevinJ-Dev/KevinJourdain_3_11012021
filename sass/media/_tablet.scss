@@ -66,6 +66,23 @@
       right: 5%;
     }
   }
+
+  .footer {
+    padding-left: 0%;
+    text-align: center;
+
+    & > .logo_footer {
+      font-size: 1.35em;
+      margin-bottom: 0%;
+      padding-top: 0.2%;
+    }
+
+    & > .list_footer {
+      font-size: 1.1em;
+      display: inline-block;
+      margin-right: 2.5%;
+    }
+  }
 }
 
 /* Menu */
